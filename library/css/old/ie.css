@@ -1,0 +1,354 @@
+/******************************************************************
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/*
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't 
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+*/
+/* import mixins */
+/******************************************************************
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
+/*********************
+CLEARFIXIN'
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/*********************
+TYPOGRAPHY
+*********************/
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('library/fonts/font-name.eot');
+    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+/******************************************************************
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+/*********************
+NAVIGATION STYLES
+*********************/
+/******************************************************************
+
+Stylesheet: 768px and Up
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/******************************************************************
+
+Stylesheet: 1280px and Up
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+/* 
+you can call the larger styles if you want, but there's really no need 
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
+/******************************************************************
+
+Stylesheet: 1440px and Up
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+.clearfix {
+  zoom: 1;
+  /*********************
+TOOLS
+*********************/
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+}
+span.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif !important;
+  font-style: italic;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.alert-help, .alert-info, .alert-error, .alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+.alert-help {
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+.alert-info {
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+.alert-error {
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+.alert-success {
+  border-color: #deeaae;
+  background: #e6efc2;
+  /*********************
+TRANSITION
+*********************/
+  /*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+}
+.nav {
+  /* .menu is clearfixed inside mixins.scss */
+}
+.menu {
+  /* end .menu */
+  /*********************
+POSTS & CONTENT STYLES
+*********************/
+  /* entry content */
+}
+.menu ul {
+  /* end .menu ul */
+}
+.menu ul li {
+  /* end .menu ul li */
+  /* highlight current page */
+}
+.menu ul li:last-child {
+  /*
+				plan your menus and drop-downs wisely.
+				*/
+}
+.menu ul li.current-menu-item, .menu ul li.current_page_item, .menu ul li.current-page-ancestor {
+  /* end current highlighters */
+}
+.entry-content {
+  /* end .entry-content */
+  /*********************
+SIDEBARS & ASIDES
+*********************/
+}
+.entry-content .alignleft, .entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+.entry-content .alignright, .entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+.entry-content .aligncenter, .entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0;
+  /*********************
+FOOTER STYLES
+*********************/
+  /*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+}
+.footer-links {
+  /* end .footer-links */
+}
+body {
+  /*********************
+LAYOUT & GRID STYLES
+*********************/
+}
+.wrap {
+  max-width: 1140px;
+  /*********************
+HEADER STYLES
+*********************/
+}
+#logo {
+  /*********************
+NAVIGATION STYLES
+*********************/
+}
+.nav {
+  /* end .nav.footer-nav */
+  /*********************
+SIDEBARS & ASIDES
+*********************/
+}
+.nav li.current-menu-item, .nav li.current_page_item, .nav li.current-page-ancestor {
+  /* end current highlighters */
+}
+.widget {
+  /* links widget */
+}
+.widget ul li {
+  margin-bottom: 0.75em;
+}
+.widget ul li a {
+  /* deep nesting */
+}
+.widget ul li ul {
+  margin-top: 0.75em;
+  padding-left: 1em;
+}
+.widget_links ul li a {
+  /* meta widget */
+}
+.widget_meta ul li a {
+  /* pages widget */
+}
+.widget_pages ul li a {
+  /* recent-posts widget */
+}
+.widget_recent_entries ul li a {
+  /* archives widget */
+}
+.widget_archive option {
+  /* tag-cloud widget */
+}
+.widget_tag_cloud a:before {
+  /* calendar widget */
+}
+#wp-calendar #prev a {
+  /* category widget */
+}
+.widget_categories .level-3 {
+  /* recent-comments widget */
+}
+.widget_recent_comments {
+  /* search widget */
+}
+.screen-reader-text {
+  /* text widget */
+}
+.textwidget p {
+  /*********************
+FOOTER STYLES
+*********************/
+  /*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+}
+.footer-links {
+  /* end .footer-links */
+}
+.footer-links ul li a {
+  /*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+}
