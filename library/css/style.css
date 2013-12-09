@@ -105,6 +105,15 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
+.page-template-page-demo-php .row.display {
+  background-color: #eee;
+}
+.page-template-page-demo-php .row.display .columns:nth-child(2), .page-template-page-demo-php .row.display .columns.small-centered, .page-template-page-demo-php .row.display .columns.large-centered {
+  background: #e1e1e1;
+}
+.page-template-page-demo-php article {
+  background: #d1d1d1;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
   /**
