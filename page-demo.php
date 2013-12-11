@@ -10,7 +10,7 @@ Template Name: Grid Demo Page Example
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-12 medium-12 columns first clearfix" role="main">
+				    <div id="main" class="xlarge-12 large-12 medium-12 columns first clearfix" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -28,6 +28,17 @@ Template Name: Grid Demo Page Example
 					
 						    <section class="entry-content">
 							    <?php the_content(); ?>
+								<div class="row display">
+								  <div class="columns">
+									  <p>
+										$small-range: (0em, 40em); /* 0, 480px-640px */<br />
+										$medium-range: (40.063em, 64em); /* 641px, 1024px */<br />
+										$large-range: (64.063em, 90em); /* 1025px, 1440px */<br />
+										$xlarge-range: (90.063em, 120em); /* 1441px, 1920px */<br />
+										$xxlarge-range: (120.063em); /* 1921px */<br />
+									  </p>
+									</div>
+								</div>
 								<div class="row display">
 								  <div class="small-2 large-4 columns"><span class="show-for-small">2</span><span class="hide-for-small">4</span></div>
 								  <div class="small-4 large-4 columns">4</div>
@@ -71,6 +82,59 @@ Template Name: Grid Demo Page Example
 								  <li><img class="th" src="http://lorempixel.com/410/260/abstract/"></li>
 								  <li><img class="th" src="http://lorempixel.com/400/250/abstract/"></li>
 								</ul>
+								<span class="demogrid">
+								<div class="row display">
+								  <div class="small-11 columns"></div>
+								  <div class="small-1 columns">1</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-2 small-offset-10 columns">2</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-3 small-offset-9 columns">3</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-4 small-offset-8 columns">4</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-5 small-offset-7 columns">5</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-6 small-offset-6 columns">6</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-7 small-offset-5 columns">7</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-8 small-offset-4 columns">8</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-9 small-offset-3 columns">9</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-10 small-offset-2 columns">10</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-11 small-offset-1 columns">11</div>
+								</div>
+								<div class="row display">
+								  <div class=""></div>
+								  <div class="small-12 columns">12</div>
+								</div>
+								</span>
+								<script>
+									$(window).on('resize', function(){$('.demogrid').css({opacity:0.8}).find('.columns').each(function(idx){$(this).html((idx)?$(this).width()+'px':'gutter '+$(this).css('paddingLeft'));});});
+								</script>
 						    </section> <!-- end article section -->
 						
 						    <footer class="article-footer">
