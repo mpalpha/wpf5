@@ -3,7 +3,7 @@
 //
 
 // This is the default html and body font-size for the base rem value.
-// $rem-base: 12px;
+$rem-base: 16px;
 
 // Uncomment to use rem-calc() in your settings
 @import "foundation/functions";
@@ -98,7 +98,7 @@
 // $medium: $medium-up;
 // $large: $large-up;
 
-//We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
+// We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
 // $cursor-crosshair-value: crosshair;
 // $cursor-default-value: default;
 // $cursor-pointer-value: pointer;
@@ -1198,5 +1198,8 @@
 	}
 	article {
 	background:#d1d1d1;
+	}
+	.row.display.demofull .columns{
+		background-image: url('#{$asset-dir}/library/images/colbg2.png');
 	}
 }

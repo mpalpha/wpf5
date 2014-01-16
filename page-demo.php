@@ -131,6 +131,23 @@ Template Name: Grid Demo Page Example
 								  <div class=""></div>
 								  <div class="small-12 columns">12</div>
 								</div>
+								<div class="row display">
+								  <div class="small-12 columns"></div>
+								</div>
+								<div class="row display demofull">
+								  <div class="small-1 columns">1</div>
+								  <div class="small-1 columns">2</div>
+								  <div class="small-1 columns">3</div>
+								  <div class="small-1 columns">4</div>
+								  <div class="small-1 columns">5</div>
+								  <div class="small-1 columns">6</div>
+								  <div class="small-1 columns">7</div>
+								  <div class="small-1 columns">8</div>
+								  <div class="small-1 columns">9</div>
+								  <div class="small-1 columns">10</div>
+								  <div class="small-1 columns">11</div>
+								  <div class="small-1 columns">12</div>
+								</div>
 								</span>
 								<script>
 									$(window).on('resize', function(){$('.demogrid').css({opacity:0.8}).find('.columns').each(function(idx){$(this).html((idx)?$(this).width()+'px':'gutter '+$(this).css('paddingLeft'));});});

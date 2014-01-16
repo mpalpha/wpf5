@@ -1,0 +1,23 @@
+AddType font/ttf .ttf
+AddType application/vnd.ms-fontobject .eot
+AddType font/otf .otf
+AddType application/x-font-woff .woff
+AddType application/vnd.ms-fontobject .svg
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>

@@ -129,6 +129,9 @@ function joints_scripts_and_styles() {
    
     // register main stylesheet
     wp_register_style( 'joints-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+   	
+    // register font stylesheet
+	wp_register_style( 'fonts', get_template_directory_uri() . '/library/fonts/font.css', array(), $assetsVersion, '', 'all' );
 
     // ie-only style sheet
     wp_register_style( 'joints-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -145,6 +148,7 @@ function joints_scripts_and_styles() {
     wp_enqueue_script( 'joints-modernizr' );
     wp_enqueue_script ('foundation-js');
     wp_enqueue_style( 'joints-stylesheet' );
+	wp_enqueue_style( 'fonts' );
     wp_enqueue_style('joints-ie-only');
 
     $wp_styles->add_data( 'joints-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet

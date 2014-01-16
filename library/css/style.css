@@ -114,6 +114,9 @@ GENERAL STYLES
 .page-template-page-demo-php article {
   background: #d1d1d1;
 }
+.page-template-page-demo-php .row.display.demofull .columns {
+  background-image: url('http://ws-jasonl:8080/wp-content/themes/wpf5/library/images/colbg2.png');
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
   /**

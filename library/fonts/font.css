@@ -1,0 +1,225 @@
+/* generated fonts */
+@font-face {
+    font-family: 'bariol_boldbold';
+    src: url('bariol_bold-webfont.eot');
+    src: url('bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bariol_bold-webfont.woff') format('woff'),
+         url('bariol_bold-webfont.ttf') format('truetype'),
+         url('bariol_bold-webfont.svg#bariol_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bariol_lightlight';
+    src: url('bariol_light-webfont.eot');
+    src: url('bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bariol_light-webfont.woff') format('woff'),
+         url('bariol_light-webfont.ttf') format('truetype'),
+         url('bariol_light-webfont.svg#bariol_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bariol_regularregular';
+    src: url('bariol_regular-webfont.eot');
+    src: url('bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bariol_regular-webfont.woff') format('woff'),
+         url('bariol_regular-webfont.ttf') format('truetype'),
+         url('bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bariolthin';
+    src: url('bariol_thin-webfont.eot');
+    src: url('bariol_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bariol_thin-webfont.woff') format('woff'),
+         url('bariol_thin-webfont.ttf') format('truetype'),
+         url('bariol_thin-webfont.svg#bariolthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'socialico';
+    src: url('socialico-webfont.eot');
+    src: url('socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('socialico-webfont.woff') format('woff'),
+         url('socialico-webfont.ttf') format('truetype'),
+         url('socialico-webfont.svg#socialico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* chrome fix */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	font-family: 'bariol_boldbold';
+	src: url('bariol_bold-webfont.svg#bariol_boldbold') format('svg');
+	}
+	@font-face {
+	font-family: 'bariol_lightlight';
+	src: url('bariol_light-webfont.svg#bariol_lightlight') format('svg');
+	}
+	@font-face {
+	font-family: 'bariol_regularregular';
+	src: url('bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+	}
+	@font-face {
+	font-family: 'bariolthin';
+	src: url('bariol_thin-webfont.svg#bariolthin') format('svg');
+	}
+    @font-face {
+    font-family: 'socialico';
+    src: url('socialico-webfont.svg#socialico') format('svg');
+    }
+}
+
+/* web and mobile fonts */
+.Arial-BoldItalicMT {
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-style:italic;
+    font-weight:700;
+}
+.Arial-BoldMT {
+    font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-weight:700;
+}
+.Arial-ItalicMT {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style:italic;
+    font-weight:400;
+}
+.ArialMT {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight:400;
+}
+.CourierNewPS-BoldItalicMT {
+    font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-style:italic;
+    font-weight:700;
+}
+.CourierNewPS-BoldMT {
+    font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight:700;
+}
+.CourierNewPS-ItalicMT {
+    font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-style:italic;
+    font-weight:400;
+}
+.CourierNewPSMT {
+    font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight:400;
+}
+.Georgia {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight:400;
+}
+.Georgia-Bold {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight:700;
+}
+.Georgia-BoldItalic {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight:700;
+    font-style:italic;
+}
+.Georgia-Italic {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style:italic;
+    font-weight:400;
+}
+.Helvetica {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:400;
+}
+.Helvetica-Bold {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:700;
+}
+.Helvetica-BoldOblique {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:700;
+    font-style:oblique;
+}
+.Helvetica-Oblique {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:400;
+    font-style:oblique;
+}
+.Palatino-Bold {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-weight:700;
+}
+.Palatino-BoldItalic {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-weight:700;
+    font-style:italic;
+}
+.Palatino-Italic {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-weight:400;
+    font-style:italic;
+}
+.Palatino-Roman {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-weight:400;
+}
+.TimesNewRomanPS-BoldItalicMT {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight:700;
+    font-style:italic;
+}
+.TimesNewRomanPS-BoldMT {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight:700;
+}
+.TimesNewRomanPS-ItalicMT {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight:400;
+    font-style:italic;
+}
+.TimesNewRomanPSMT {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight:400;
+}
+.Trebuchet-BoldItalic {
+    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-style:italic;
+    font-weight:700;
+}
+.TrebuchetMS {
+    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-weight:400;
+}
+.TrebuchetMS-Bold {
+    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-weight:700;
+}
+.TrebuchetMS-Italic {
+    font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-style:italic;
+    font-weight:400;
+}
+.Verdana {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight:400;
+}
+.Verdana-Bold {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight:700;
+}
+.Verdana-BoldItalic {
+    font-family: Verdana, Geneva, sans-serif;
+    font-style:italic;
+    font-weight:700;
+}
+.Verdana-Italic {
+    font-family: Verdana, Geneva, sans-serif;
+    font-style:italic;
+    font-weight:400;
+}
